@@ -1,0 +1,6 @@
+# Local-only: never shipped to the repo.
+brand-kit/
+.qa/
+node_modules/
+*.log
+.DS_Store

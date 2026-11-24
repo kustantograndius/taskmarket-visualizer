@@ -1,0 +1,391 @@
+{
+ "generatedAt": "2026-11-24T19:47:40.413Z",
+ "log": [
+  {
+   "endpoint": "/market/stats?chainId=4217",
+   "status": 200,
+   "ms": 14621,
+   "detail": "",
+   "at": "2026-11-24T19:47:55.050Z"
+  },
+  {
+   "endpoint": "/stats/breakdowns?chainId=4217",
+   "status": 200,
+   "ms": 650,
+   "detail": "",
+   "at": "2026-11-24T19:47:55.700Z"
+  },
+  {
+   "endpoint": "/stats/platform-time-series?chainId=4217&range=7d&bucket=day",
+   "status": 200,
+   "ms": 1374,
+   "detail": "",
+   "at": "2026-11-24T19:47:57.074Z"
+  },
+  {
+   "endpoint": "/stats/platform-time-series?chainId=4217&range=30d&bucket=day",
+   "status": 200,
+   "ms": 415,
+   "detail": "",
+   "at": "2026-11-24T19:47:57.490Z"
+  },
+  {
+   "endpoint": "/stats/platform-time-series?chainId=4217&range=90d&bucket=day",
+   "status": 200,
+   "ms": 859,
+   "detail": "",
+   "at": "2026-11-24T19:47:58.349Z"
+  },
+  {
+   "endpoint": "/stats/platform-time-series?chainId=4217&range=all&bucket=week",
+   "status": 200,
+   "ms": 437,
+   "detail": "",
+   "at": "2026-11-24T19:47:58.787Z"
+  },
+  {
+   "endpoint": "/stats/activity-heatmap?chainId=4217&range=30d&dimension=hourOfWeek",
+   "status": 200,
+   "ms": 393,
+   "detail": "",
+   "at": "2026-11-24T19:47:59.180Z"
+  },
+  {
+   "endpoint": "/stats/activity-heatmap?chainId=4217&range=30d&dimension=mode",
+   "status": 200,
+   "ms": 503,
+   "detail": "",
+   "at": "2026-11-24T19:47:59.683Z"
+  },
+  {
+   "endpoint": "/tasks?chainId=4217&sort=newest&limit=100",
+   "status": 200,
+   "ms": 957,
+   "detail": "",
+   "at": "2026-11-24T19:48:00.640Z"
+  },
+  {
+   "endpoint": "/tasks?chainId=4217&sort=newest&limit=100&cursor=2026-11-23T01%3A09%3A58.525Z",
+   "status": 200,
+   "ms": 560,
+   "detail": "",
+   "at": "2026-11-24T19:48:01.203Z"
+  },
+  {
+   "endpoint": "/tasks?chainId=4217&sort=newest&limit=100&cursor=2026-11-22T07%3A29%3A50.928Z",
+   "status": 200,
+   "ms": 1175,
+   "detail": "",
+   "at": "2026-11-24T19:48:02.380Z"
+  },
+  {
+   "endpoint": "/tasks?chainId=4217&sort=newest&limit=100&cursor=2026-11-21T00%3A46%3A43.169Z",
+   "status": 200,
+   "ms": 838,
+   "detail": "",
+   "at": "2026-11-24T19:48:03.220Z"
+  },
+  {
+   "endpoint": "/tasks?chainId=4217&sort=newest&limit=100&cursor=2026-11-20T05%3A57%3A02.653Z",
+   "status": 200,
+   "ms": 1142,
+   "detail": "",
+   "at": "2026-11-24T19:48:04.365Z"
+  },
+  {
+   "endpoint": "/tasks?chainId=4217&sort=newest&limit=100&cursor=2026-11-19T00%3A40%3A03.872Z",
+   "status": 200,
+   "ms": 487,
+   "detail": "",
+   "at": "2026-11-24T19:48:04.854Z"
+  },
+  {
+   "endpoint": "/tasks?chainId=4217&sort=newest&limit=100&cursor=2026-11-16T18%3A57%3A27.958Z",
+   "status": 200,
+   "ms": 343,
+   "detail": "",
+   "at": "2026-11-24T19:48:05.198Z"
+  },
+  {
+   "endpoint": "/tasks?chainId=4217&sort=newest&limit=100&cursor=2026-11-12T17%3A24%3A18.743Z",
+   "status": 200,
+   "ms": 828,
+   "detail": "",
+   "at": "2026-11-24T19:48:06.027Z"
+  },
+  {
+   "endpoint": "/tasks?chainId=4217&sort=newest&limit=100&cursor=2026-11-03T19%3A59%3A30.332Z",
+   "status": 200,
+   "ms": 368,
+   "detail": "",
+   "at": "2026-11-24T19:48:06.397Z"
+  },
+  {
+   "endpoint": "/tasks?chainId=4217&sort=newest&limit=100&cursor=2026-10-22T19%3A01%3A44.898Z",
+   "status": 200,
+   "ms": 551,
+   "detail": "",
+   "at": "2026-11-24T19:48:06.948Z"
+  },
+  {
+   "endpoint": "/stats/activity-feed?chainId=4217&limit=50",
+   "status": 200,
+   "ms": 781,
+   "detail": "",
+   "at": "2026-11-24T19:48:07.729Z"
+  },
+  {
+   "endpoint": "/stats/activity-feed?chainId=4217&limit=50&cursor=2026-11-24T19%3A11%3A05.764Z",
+   "status": 200,
+   "ms": 572,
+   "detail": "",
+   "at": "2026-11-24T19:48:08.301Z"
+  },
+  {
+   "endpoint": "/stats/activity-feed?chainId=4217&limit=50&cursor=2026-11-24T18%3A41%3A42.490Z",
+   "status": 200,
+   "ms": 367,
+   "detail": "",
+   "at": "2026-11-24T19:48:08.668Z"
+  },
+  {
+   "endpoint": "/stats/activity-feed?chainId=4217&limit=50&cursor=2026-11-24T18%3A12%3A01.834Z",
+   "status": 200,
+   "ms": 287,
+   "detail": "",
+   "at": "2026-11-24T19:48:08.955Z"
+  },
+  {
+   "endpoint": "/stats/activity-feed?chainId=4217&limit=50&cursor=2026-11-24T17%3A25%3A46.294Z",
+   "status": 200,
+   "ms": 480,
+   "detail": "",
+   "at": "2026-11-24T19:48:09.435Z"
+  },
+  {
+   "endpoint": "/stats/activity-feed?chainId=4217&limit=50&cursor=2026-11-24T15%3A56%3A18.608Z",
+   "status": 200,
+   "ms": 893,
+   "detail": "",
+   "at": "2026-11-24T19:48:10.328Z"
+  },
+  {
+   "endpoint": "/stats/activity-feed?chainId=4217&limit=50&cursor=2026-11-24T15%3A15%3A42.180Z",
+   "status": 200,
+   "ms": 975,
+   "detail": "",
+   "at": "2026-11-24T19:48:11.303Z"
+  },
+  {
+   "endpoint": "/stats/activity-feed?chainId=4217&limit=50&cursor=2026-11-24T14%3A37%3A46.069Z",
+   "status": 200,
+   "ms": 1078,
+   "detail": "",
+   "at": "2026-11-24T19:48:12.381Z"
+  },
+  {
+   "endpoint": "/stats/activity-feed?chainId=4217&limit=50&cursor=2026-11-24T13%3A33%3A21.345Z",
+   "status": 200,
+   "ms": 499,
+   "detail": "",
+   "at": "2026-11-24T19:48:12.881Z"
+  },
+  {
+   "endpoint": "/stats/activity-feed?chainId=4217&limit=50&cursor=2026-11-24T12%3A46%3A22.677Z",
+   "status": 200,
+   "ms": 304,
+   "detail": "",
+   "at": "2026-11-24T19:48:13.186Z"
+  },
+  {
+   "endpoint": "/stats/activity-feed?chainId=4217&limit=50&cursor=2026-11-24T12%3A17%3A54.863Z",
+   "status": 200,
+   "ms": 485,
+   "detail": "",
+   "at": "2026-11-24T19:48:13.671Z"
+  },
+  {
+   "endpoint": "/stats/activity-feed?chainId=4217&limit=50&cursor=2026-11-24T11%3A56%3A04.999Z",
+   "status": 200,
+   "ms": 878,
+   "detail": "",
+   "at": "2026-11-24T19:48:14.550Z"
+  },
+  {
+   "endpoint": "/market/stats?chainId=8453",
+   "status": 200,
+   "ms": 1038,
+   "detail": "",
+   "at": "2026-11-24T19:48:15.588Z"
+  },
+  {
+   "endpoint": "/stats/breakdowns?chainId=8453",
+   "status": 200,
+   "ms": 540,
+   "detail": "",
+   "at": "2026-11-24T19:48:16.128Z"
+  },
+  {
+   "endpoint": "/stats/platform-time-series?chainId=8453&range=7d&bucket=day",
+   "status": 200,
+   "ms": 578,
+   "detail": "",
+   "at": "2026-11-24T19:48:16.706Z"
+  },
+  {
+   "endpoint": "/stats/platform-time-series?chainId=8453&range=30d&bucket=day",
+   "status": 200,
+   "ms": 370,
+   "detail": "",
+   "at": "2026-11-24T19:48:17.076Z"
+  },
+  {
+   "endpoint": "/stats/platform-time-series?chainId=8453&range=90d&bucket=day",
+   "status": 200,
+   "ms": 489,
+   "detail": "",
+   "at": "2026-11-24T19:48:17.565Z"
+  },
+  {
+   "endpoint": "/stats/platform-time-series?chainId=8453&range=all&bucket=week",
+   "status": 200,
+   "ms": 722,
+   "detail": "",
+   "at": "2026-11-24T19:48:18.287Z"
+  },
+  {
+   "endpoint": "/stats/activity-heatmap?chainId=8453&range=30d&dimension=hourOfWeek",
+   "status": 200,
+   "ms": 537,
+   "detail": "",
+   "at": "2026-11-24T19:48:18.824Z"
+  },
+  {
+   "endpoint": "/stats/activity-heatmap?chainId=8453&range=30d&dimension=mode",
+   "status": 200,
+   "ms": 656,
+   "detail": "",
+   "at": "2026-11-24T19:48:19.480Z"
+  },
+  {
+   "endpoint": "/tasks?chainId=8453&sort=newest&limit=100",
+   "status": 200,
+   "ms": 611,
+   "detail": "",
+   "at": "2026-11-24T19:48:20.091Z"
+  },
+  {
+   "endpoint": "/tasks?chainId=8453&sort=newest&limit=100&cursor=2026-11-02T02%3A11%3A53.487Z",
+   "status": 200,
+   "ms": 661,
+   "detail": "",
+   "at": "2026-11-24T19:48:20.753Z"
+  },
+  {
+   "endpoint": "/tasks?chainId=8453&sort=newest&limit=100&cursor=2026-10-30T00%3A44%3A24.675Z",
+   "status": 200,
+   "ms": 1068,
+   "detail": "",
+   "at": "2026-11-24T19:48:21.822Z"
+  },
+  {
+   "endpoint": "/tasks?chainId=8453&sort=newest&limit=100&cursor=2026-10-05T10%3A36%3A11.892Z",
+   "status": "error",
+   "ms": 887,
+   "detail": "Error: HTTP 429: {\"message\":\"Public read capacity reached; retry shortly\",\"code\":\"TOO_MANY_REQUESTS\",\"data\":{\"code\":\"TOO_MANY_REQUESTS\",\"httpStatus\":429,\"path\":\"tasks.list\",\"taskmarket\":{\"reason\":\"rat",
+   "at": "2026-11-24T19:48:22.712Z"
+  },
+  {
+   "endpoint": "/tasks?chainId=8453&sort=newest&limit=100&cursor=2026-10-05T10%3A36%3A11.892Z",
+   "status": 200,
+   "ms": 1117,
+   "detail": "",
+   "at": "2026-11-24T19:48:24.830Z"
+  },
+  {
+   "endpoint": "/stats/activity-feed?chainId=8453&limit=50",
+   "status": 200,
+   "ms": 318,
+   "detail": "",
+   "at": "2026-11-24T19:48:25.154Z"
+  },
+  {
+   "endpoint": "/stats/activity-feed?chainId=8453&limit=50&cursor=2026-11-24T19%3A11%3A05.764Z",
+   "status": 200,
+   "ms": 539,
+   "detail": "",
+   "at": "2026-11-24T19:48:25.693Z"
+  },
+  {
+   "endpoint": "/stats/activity-feed?chainId=8453&limit=50&cursor=2026-11-24T18%3A41%3A42.490Z",
+   "status": 200,
+   "ms": 602,
+   "detail": "",
+   "at": "2026-11-24T19:48:26.295Z"
+  },
+  {
+   "endpoint": "/stats/activity-feed?chainId=8453&limit=50&cursor=2026-11-24T18%3A12%3A01.834Z",
+   "status": 200,
+   "ms": 460,
+   "detail": "",
+   "at": "2026-11-24T19:48:26.755Z"
+  },
+  {
+   "endpoint": "/stats/activity-feed?chainId=8453&limit=50&cursor=2026-11-24T17%3A25%3A46.294Z",
+   "status": 200,
+   "ms": 906,
+   "detail": "",
+   "at": "2026-11-24T19:48:27.661Z"
+  },
+  {
+   "endpoint": "/stats/activity-feed?chainId=8453&limit=50&cursor=2026-11-24T15%3A56%3A18.608Z",
+   "status": 200,
+   "ms": 1622,
+   "detail": "",
+   "at": "2026-11-24T19:48:29.284Z"
+  },
+  {
+   "endpoint": "/stats/activity-feed?chainId=8453&limit=50&cursor=2026-11-24T15%3A15%3A42.180Z",
+   "status": 200,
+   "ms": 547,
+   "detail": "",
+   "at": "2026-11-24T19:48:29.831Z"
+  },
+  {
+   "endpoint": "/stats/activity-feed?chainId=8453&limit=50&cursor=2026-11-24T14%3A37%3A46.069Z",
+   "status": 200,
+   "ms": 367,
+   "detail": "",
+   "at": "2026-11-24T19:48:30.199Z"
+  },
+  {
+   "endpoint": "/stats/activity-feed?chainId=8453&limit=50&cursor=2026-11-24T13%3A33%3A21.345Z",
+   "status": 200,
+   "ms": 657,
+   "detail": "",
+   "at": "2026-11-24T19:48:30.856Z"
+  },
+  {
+   "endpoint": "/stats/activity-feed?chainId=8453&limit=50&cursor=2026-11-24T12%3A46%3A22.677Z",
+   "status": 200,
+   "ms": 577,
+   "detail": "",
+   "at": "2026-11-24T19:48:31.433Z"
+  },
+  {
+   "endpoint": "/stats/activity-feed?chainId=8453&limit=50&cursor=2026-11-24T12%3A17%3A54.863Z",
+   "status": 200,
+   "ms": 702,
+   "detail": "",
+   "at": "2026-11-24T19:48:32.135Z"
+  },
+  {
+   "endpoint": "/stats/activity-feed?chainId=8453&limit=50&cursor=2026-11-24T11%3A56%3A04.999Z",
+   "status": 200,
+   "ms": 676,
+   "detail": "",
+   "at": "2026-11-24T19:48:32.811Z"
+  }
+ ],
+ "errors": []
+}

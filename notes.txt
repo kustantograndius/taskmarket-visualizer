@@ -1,0 +1,57 @@
+Taskmarket Live Market Visualizer — notes for bounty TSK-BRK611AN
+=====================================================================
+
+Live URL:   <!-- LIVE_URL -->
+Repo URL:   <!-- REPO_URL -->
+
+Stack
+-----
+Static site (HTML + CSS + dependency-free JavaScript; charts are inline SVG
+generated from the data file). No frameworks, no CDNs, no analytics, no
+wallet connection. Data fetched server-side by scripts/fetch.mjs (Node 24,
+standard library only) and baked into public/data/dashboard.json.
+
+Endpoints used (all public, no key, https://api.taskmarket.dev)
+---------------------------------------------------------------
+- /api/market/stats?chainId=…
+- /api/stats/breakdowns?chainId=…
+- /api/stats/platform-time-series?chainId=…&range=7d|30d|90d|all&bucket=day|week
+- /api/stats/activity-heatmap?chainId=…&range=30d&dimension=hourOfWeek|mode
+- /api/stats/activity-feed?chainId=…&limit=50
+- /api/tasks?chainId=…&sort=newest&limit=100 (paginated)
+Chains: 4217 (Tempo) and 8453 (Base). Money is in micro units in the API
+(1,000,000 micro = 1 OUSD / 1 USDC).
+
+How and how often it refreshes
+-------------------------------
+GitHub Actions rebuilds hourly (cron "7 * * * *", .github/workflows/refresh.yml):
+fetch → render share cards → assemble public/ → deploy to the gh-pages branch
+(GitHub Pages). Data is cached at least 60 seconds; the page shows a visible
+"Data as of" time (UTC) on every view. A manual refresh is `npm run build`.
+
+Deploy command (one command, from a clone with push access)
+------------------------------------------------------------
+npm run deploy
+
+It builds the site and pushes public/ to the gh-pages branch. GitHub Pages
+must be set to serve the gh-pages branch (one-time, repo Settings → Pages).
+Local preview: npm run serve (http://localhost:8130).
+
+Views (deep links)
+------------------
+?view=overview | market | flow | posters | heatmap | feed | methods
+?chain=4217 | 8453, ?range=7d | 30d | 90d | all
+
+Notes for the reviewer
+----------------------
+- The API returns platform-wide figures for time-series, breakdowns, heatmap
+  and activity-feed (identical for both chains). Per-chain figures are paid
+  workers, active wallets, the task list, open escrow and poster stats. The
+  site labels this in Methods and wherever a platform-wide series is shown.
+- Poster display names are shown only when the API itself returns them;
+  otherwise a truncated wallet address is shown. No names are guessed.
+- "Median time to decision" is shown only when at least 3 completion events
+  were observed in the feed window; otherwise the site says so honestly.
+- The 7d time-series range returns 8 day buckets including the current
+  (partial) day; 7d totals sum exactly the buckets the API returns.
+- Licence: MIT (see LICENSE). Brand assets follow the Taskmarket brand kit.

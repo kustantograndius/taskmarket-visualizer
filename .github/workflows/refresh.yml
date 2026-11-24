@@ -1,0 +1,37 @@
+name: refresh-data
+# Hourly server-side data refresh: fetch the public Taskmarket API, rebuild
+# the static site, and deploy to GitHub Pages (gh-pages branch).
+# No secrets needed — GITHUB_TOKEN is provided by Actions.
+on:
+  schedule:
+    - cron: "7 * * * *" # hourly, a few minutes past the hour
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build site (fetch + share cards + assemble public/)
+        run: node scripts/build.mjs
+      - name: Deploy to gh-pages
+        run: |
+          git config user.name "taskmarket-visualizer"
+          git config user.email "visualizer@taskmarket.dev"
+          git worktree add --detach /tmp/gh-pages gh-pages 2>/dev/null || git worktree add --detach /tmp/gh-pages
+          # Clear the worktree (never touch its .git pointer file), then copy the build in.
+          ls -A /tmp/gh-pages | grep -v '^\.git$' | xargs -r -I{} rm -rf "/tmp/gh-pages/{}"
+          cp -r public/. /tmp/gh-pages/
+          cd /tmp/gh-pages
+          git add -A
+          git commit -qm "refresh: data as of $(date -u +%Y-%m-%dT%H:%M:%SZ)" || echo "nothing to commit"
+          git push origin HEAD:gh-pages

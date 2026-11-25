@@ -1,8 +1,8 @@
 Taskmarket Live Market Visualizer — notes for bounty TSK-BRK611AN
 =====================================================================
 
-Live URL:   <!-- LIVE_URL -->
-Repo URL:   <!-- REPO_URL -->
+Live URL:   https://kustantograndius.github.io/taskmarket-visualizer/
+Repo URL:   https://github.com/kustantograndius/taskmarket-visualizer
 
 Stack
 -----

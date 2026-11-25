@@ -33,7 +33,7 @@ try {
   }
   // Clear everything except .git, then copy the fresh build in.
   sh("git rm -rf --quiet . 2>/dev/null || true", work);
-  sh(`cp -r ${join(process.cwd(), "public", ".")} ${work}/`, work);
+  sh(`cp -r ${join(process.cwd(), "public")}/. ${work}/`, work);
   const stamp = new Date().toISOString();
   sh(`git add -A && (git -c user.name="taskmarket-visualizer" -c user.email="visualizer@taskmarket.dev" commit -qm "deploy: data as of ${stamp}" || echo "nothing to commit")`, work);
   sh("git push --quiet origin gh-pages", work);
